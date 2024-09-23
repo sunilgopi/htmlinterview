@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css interview Questions</title>
+    <style>
+        .header
+        {
+            text-align: center;
+            font-weight: 900;
+            text-decoration: underline;
+            
+            
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        a {
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #45a049;
+        }
+
+        details {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            padding: 15px;
+            width: 80%;
+            text-align: left;
+            transition: box-shadow 1s ease;
+        }
+
+        details summary {
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            color: blue;
+            margin-bottom: 10px;
+        }
+
+        details[open] {
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        details p {
+            font-size: 16px;
+            color: #666;
+            margin: 0;
+            line-height: 20px;
+        }
+        pre{
+            font-size: 16px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 300;
+        }
+
+        @media (max-width: 600px) {
+            details {
+                width: 95%;
+            }
+
+            details summary {
+                font-size: 16px;
+            }
+
+            details p {
+                font-size: 14px;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+
+   <div class="header">
+    <h1>Interview Questions</h1>
+   </div>
+
+    <details>
+        <summary>What is html?</summary>
+        <p>HTML (Hypertext Markup Language) is the standard language used to create and design webpages.</p>
+    </details>
+
+    <details>
+        <summary>what is doctype in html?</summary>
+        <p>In HTML, `<!DOCTYPE>` is a declaration that defines the document type and version of HTML being used. It ensures the browser renders the page in standards-compliant mode. For modern web development, `!DOCTYPE html` is used for HTML5. </p>
+    </details>
+
+    <details>
+        <summary>what is tag? how many type of tags?
+        </summary>
+        <pre>A **tag** in programming typically refers to a keyword or label used to categorize or mark data, such as in HTML or version control systems like Git.
+
+          ### Types of Tags:
+          1. **HTML Tags**: Elements enclosed in angle brackets `< >` to define content structure (e.g., `div`, `a`).
+          2. **Git Tags**: Mark specific points in a repository's history, often used to label releases (e.g., v1.0.0).
+          3. **XML/Metadata Tags**: Used to describe data in markup languages (e.g., `book`, `author`).
+          
+         </pre>
+    </details>
+
+    <details>
+        <summary>what is d/f b/w the tag and element?</summary>
+       <pre>In HTML, an element is a building block that defines the structure and content of a webpage. It consists of an opening tag, content, and a closing tag.</pre>
+    </details>
+
+   <details>
+    <summary>what is d/f b/w the href and src attr?</summary>
+    <pre>The href attribute is used to link to external resources, such as stylesheets or pages , 
+      while the src attribute is used to embed content like images, scripts, or iframes .
+
+      href: Hyperlink reference (link or navigate to a resource).
+      src: Source of embedded content (load a resource into the page).</pre>
+   </details>
+
+   <details>
+    <summary>what is marquee tag?</summary>
+    <pre>The marquee tag in HTML is used to create scrolling text or images. It moves content horizontally or vertically across the screen.</pre>
+   </details>
+
+   <details>
+    <summary>define list types in html?</summary>
+    <pre>In HTML, there are three main types of lists:
+
+      Ordered List (ol): Displays items in a numbered format. Each item is marked with a number.
+      
+      Unordered List (ul): Displays items in a bulleted format. Each item is marked with a bullet point.
+      
+      Description List (dl): Contains terms and their descriptions. Each term is wrapped in a <dt> tag, followed by a <dd> tag for the description.</pre>
+   </details>
+
+   <details>
+    <summary>what are the formatting tags?</summary>
+    <pre>strong or b
+      Italic: em or i
+      Underline: u
+      Strikethrough: s or del
+      Superscript: sup
+      Subscript: sub
+      Line Break: br
+      Horizontal Rule:pre
+   </details>
+
+   <details>
+    <summary>difference between b and strong</summary>
+    <pre>The b tag is used to make text bold without implying any added importance, while the strong tag also makes text bold but indicates that the text has strong importance or emphasis. In semantic HTML, strong is preferred when conveying meaning, whereas b is more for presentation</pre>
+   </details>
+
+   <details>
+    <summary>What is seo and what are the methods in seo?</summary>
+    <pre>**SEO (Search Engine Optimization)** is the process of optimizing a website to improve its visibility in search engine results, ultimately increasing organic (non-paid) traffic.
+
+**Key SEO Methods:**
+
+1. **Keyword Research:** Identifying relevant keywords and phrases to target in your content.
+2. **On-Page SEO:** Optimizing individual pages by improving content quality, using headings, meta tags, and images.
+3. **Technical SEO:** Ensuring the website is crawlable, has a good site structure, fast loading times, and is mobile-friendly.
+4. **Off-Page SEO:** Building backlinks from reputable sites to improve domain authority.
+5. **Content Marketing:** Creating high-quality, valuable content that addresses user needs and encourages sharing.
+
+These methods collectively enhance a website's ranking in search engines, leading to increased visibility and traffic.</pre>
+   </details>
+
+   <details>
+    <summary>what is d/f b/w block elements vs inline elements?</summary>
+    <pre>Block elements and inline elements differ in their layout behavior:
+
+      Block Elements:
+      
+      Take up the full width available (100% of the container).
+      Always start on a new line.
+    </pre>
+   </details>
+
+   <details>
+    <summary>what is the difference between sematic and non sematic elements?</summary>
+    <pre>Semantic elements are HTML tags that clearly describe their meaning in a human- and machine-readable way. Examples include <header>, <article>, and <footer>. They improve accessibility and SEO by providing context about the content.
+
+      Non-semantic elements, on the other hand, do not convey any meaning about their content. Examples include <div> and <span>, which are used purely for styling and layout without indicating the type of content they contain.</pre>
+   </details>
+   <details>
+    <summary>what are meta tags?</summary>
+    <pre>Meta tags are HTML elements used to provide structured metadata about a web page. They are placed in the <head> section of the HTML document and help search engines understand the content of the page. Common meta tags include:
+
+      meta name="description": Summarizes the page content for search engines and is often displayed in search results.
+      meta name="keywords": Lists relevant keywords for the page (less commonly used today).
+      meta name="viewport": Controls the layout on mobile browsers.
+      meta charset="UTF-8": Specifies the character encoding for the document.
+      These tags play a crucial role in SEO and responsive design.</pre>
+   </details>
+
+   <details>
+    <summary>What is iframes?</summary>
+    <pre>iFrames (inline frames) are HTML elements used to embed another document within the current HTML document. They allow you to display content from another source, such as a webpage or video, without leaving the main page. iFrames are commonly used for ads, maps, and other interactive content.</pre>
+   </details>
+   <details>
+    <summary>what are the html entities?</summary>
+    <pre>HTML entities are special codes used to represent characters that have a specific meaning in HTML or are not easily typed.</pre>
+   </details>
+
+   <details>
+    <summary>what are the features of html 5?
+    </summary>
+    <pre>HTML5 includes several key features:
+
+      1. **New Semantic Elements**: Introduces elements like for better document structure.
+      
+      2. **Multimedia Support**: Native support for audio and video elements without the need for plugins.
+      
+      3. **Canvas Element**: Allows for dynamic, scriptable rendering of 2D shapes and bitmap images using the tag.
+      
+      4. **Form Enhancements**: New input types (e.g., `email`, `date`, `number`) and attributes (e.g., `placeholder`, `autofocus`) for improved form functionality.
+      
+      5. **Local Storage**: Provides a way to store data on the client side using `localStorage` and `sessionStorage`.
+      
+      6. **Geolocation API**: Enables the retrieval of the user's geographical location.
+      
+      7. **Web Workers**: Supports background scripts to run in parallel with the main thread, improving performance.
+      
+      8. **Responsive Design**: Media queries and flexible layouts support responsive web design.
+      
+      These features enhance web applications' capabilities, making them more interactive and efficient.</pre>
+   </details>
+   <details>
+    <summary>what is git?</summary>
+    <pre>Git is a distributed version control system that helps track changes in source code during software development. It allows multiple developers to collaborate on projects, manage versions, and revert to previous states of the code easily. Git maintains a complete history of changes, making it essential for managing large codebases efficiently.</pre>
+   </details>
+   <details>
+    <summary>differnce between git vs github</summary>
+    <pre>Git: A distributed version control system that allows developers to track changes in their code and collaborate on projects. It operates locally on a user's machine.
+
+      GitHub: A web-based platform that hosts Git repositories, providing a collaborative environment for developers to share code, manage projects, and contribute through features like pull requests, issues, and wikis.
+      
+      In short, Git is the tool for version control, while GitHub is a platform for hosting and collaborating on Git repositories.
+      </pre>
+   </details>
+   <details>
+    <summary>What is the difference between local and remote repositiory</summary>
+    <pre>A local repository is a version-controlled directory on your computer where you can track changes to files, commit updates, and manage branches without needing an internet connection.
+
+      A GitHub repository is a remote version of your local repository hosted on GitHub, allowing for collaboration, sharing, and access to your code over the internet. It enables multiple developers to work together, track changes, and manage project issues.</pre>
+   </details>
+   <details>
+    <summary>what is the command to initialize the git to your local directory? </summary>
+    <pre>git init</pre>
+   </details>
+   <details>
+    <summary>what is the command to use in order to move the changes  to staged area?</summary>
+    <pre>git add.</pre>
+   </details>
+   <details>
+    <summary>what is the command to use to commit all the staged change local repo?</summary>
+    <pre>git commit -m "your commit message"
+    </pre>
+   </details>
+   <details>
+    <summary>what is the d/f b/ the push and pull in git?</summary>
+    <pre>Push: Sends your local commits to a remote repository (e.g., GitHub), updating it with your changes.
+      Pull: Fetches and merges changes from the remote repository into your local branch.</pre>
+   </details>
+
+   <details>
+    <summary>what are the ways of getting code from github?
+    </summary>
+    <pre>26/26
+
+      ChatGPT said:
+      ChatGPT
+      Clone: Use git clone repo_url to copy the entire repository to your local machine.
+      Download ZIP: Download the repository as a ZIP file from the GitHub website.
+      Fork: Create a personal copy of the repository in your GitHub account.
+      GitHub Desktop: Use the GitHub Desktop app to manage and clone repositories.
+      API: Access code programmatically using GitHub's API.</pre>
+   </details>
+   <details>
+    <summary>what is the flow of git???
+    </summary>
+    <pre>The Git workflow typically follows these steps:
+
+      Clone: Copy a remote repository to your local machine.
+      Branch: Create or switch to a separate branch for new work.
+      Modify: Make changes to files and stage them.
+      Commit: Save your changes locally with a message describing them.
+      Push: Send your local commits to the remote repository.
+      Pull: Fetch and merge changes from the remote repository.
+      Merge/Rebase: Combine your branch with another branch (like main or master).
+      Resolve Conflicts: Manually fix any merge conflicts if needed.
+      This workflow ensures smooth collaboration and version control.
+      
+      
+      </pre>
+   </details>  
+   <details>
+    <summary> what is git status
+    </summary>
+    <pre>      In Git, git status shows the current state of your working directory and staging area. It lets you see which changes have been staged, which haven't, and if there are any files that aren't being tracked by Git.
+    </pre>
+   </details>
+   
+
+
+</body>
+
+</html>
